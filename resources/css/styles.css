@@ -1,0 +1,230 @@
+/* Basic CSS */
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: 'gantari', arial, sans-serif;
+    font-size: 16px;
+}
+
+th {
+    text-align: left;
+}
+
+/* Header */
+
+header {
+    block-size: 300px;
+    display:flex;
+    align-items: center;
+    background-image: url('../images/background.jpg');
+    background-size: cover;  
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        block-size: 600px;
+    }
+}
+
+header section {
+    position: sticky;
+    inline-size: 90vw;
+    max-inline-size: 1200px;
+    margin: 0 auto;
+    top: 2rem;
+}
+
+h1 { 
+    font-size: 40px;
+    color: hsl(0, 100%, 100%);
+    padding-block: 0.5em;
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+
+/* Main */
+
+main {
+    inline-size: 90vw;
+    max-inline-size: 1200px;
+    margin: 0 auto 2em auto;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: auto minmax(min-content, 1fr);
+    }
+}
+
+article { 
+    margin-block: 3em;
+}
+
+table,
+article > section {
+    margin-block: 1.5em;
+}
+
+h2, 
+h3 {
+    margin-block: .2em
+}
+
+
+@media screen and (min-width: 1024px) {
+    div { 
+        grid-column: 2;
+        padding-inline: 1.5em 0;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+code { 
+    font-family:'Courier New', Courier, monospace;
+    display: inline-block;
+}
+
+
+/* Main > navigation */
+
+
+nav#topics {
+    display:none;
+    margin-block: 3em;
+}
+
+@media screen and (min-width: 1024px) {
+    nav#topics {
+        display:block;
+        grid-column: 1;
+    }
+}
+
+nav#topics ul { 
+    position: sticky;
+    top: 1em;
+}
+
+nav#topics ul li {
+    list-style: none;
+}
+
+nav#topics ul li a {
+    display: block;
+    padding: 0.7em;
+    margin-block-end: 0.5em;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    border: 1px solid hsl(0, 0%, 70%);
+    border-radius: 0.3em;
+    transition: .2s background ease-in; 
+}
+
+nav#topics ul li a:hover {
+    background-color: hsl(0, 0%, 80%);
+    transition: .2s background ease-in; 
+}
+
+/* Main > Table */
+
+table {
+    padding: 10px;
+    inline-size: 100%;    
+    border: 1px solid hsl(0, 0%, 90%);
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 0.3em;
+}
+
+thead tr {
+    background-color: hsl(0, 0%, 90%);
+}
+
+th { 
+    font-size: 20px;
+    padding: 10px;
+}
+
+tbody tr {
+    background-color: hsl(0, 0%, 100%);
+}
+
+td { 
+    padding: 10px;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: hsl(0, 0%, 95%);
+}
+
+tr:hover, 
+tr:nth-of-type(even):hover {
+    background-color: hsl(0, 0%, 80%);
+}
+
+/* Resources */
+
+.bookmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: 0;
+    transition-property: left, top, box-shadow;
+    transition-duration: 0.5s, 0.5s, 0.5s;
+    list-style: none;
+    border: 1px solid hsl(0, 0%, 90%);
+    padding: 2em 1em;
+    border-radius: 0.3em;
+    margin-block: 1em;
+}
+
+.bookmark:hover {
+    top: -0.5em;
+    left: 0.5em;
+    box-shadow: -0.5em 0.5em 0 hsl(0, 0%, 80%);
+    transition-property: left, top, box-shadow;
+    transition-duration: 0.5s, 0.5s, 0.5s;
+}
+
+
+.bookmark a { 
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+
+}
+
+
+/* Footer */
+
+footer {
+    color:hsl(0, 0%, 100%);
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+
+footer > div { 
+    inline-size: 90vw; 
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+
+footer p { 
+    letter-spacing: .8px;
+    font-size: 12px;
+}

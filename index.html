@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS project HTML CheatSheet</title>
+    <link rel="stylesheet" href="./resources/css/styles.css">
+    <link rel="shortcut icon" href="./resources/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@400;700&family=Montserrat:wght@400;700&display=swap&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section>
+            <h1>HTML & CSS project<br>HTML CheatSheet</h1>
+        </section>
+    </header>
+    <main>
+        <nav id="topics">
+            <ul>
+                <li><a href="#started">Getting Started</a></li>
+                <li><a href="#headings">HTML Headings Elements</a</li>
+                <li><a href="#semantics">HTML Semantics</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+        <div>
+            <article id="started">
+                <h2>Getting Started</h2>
+                <p>Grab a cup of tea, open your laptop. It's time to code some webpages in. First we need some tools to make sure we setup a comfortable envoirement. No i'm not gonna recommend which chair or desk you need but as a developer we also need some other tools to get started.</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Code editor</td>
+                            <td><a href="">Visual Studio Code</a></td>
+                        </tr>
+                        <tr>
+                            <td>Basic HTML template</td>
+                            <td><a href="">First template</a></td>
+                        </tr>
+                    </tbody>
+                </table> 
+                <section>
+                    <h3>Visual Studio Code</h3>
+                    <p>As code editor i recommend Visual Studio Code. It's open source and easy to use.</p>
+                </section>
+                <section>
+                   <h3>Basic HTML template</h3>
+                   <p>I have setup a clean template which can be downloaded to get you started. In this template i resetted the standard CSS which has been delivered by your browser, so there whill be no surprises later on.</p> 
+                </section>
+            </article>
+            <article id="headings">
+                <h2>HTML Headings Elements</h2>
+                <p>The &lt;h1&gt; to &lt;h6&gt; HTML elements represent six levels of section headings. &lt;h1&gt; is the highest section level and &lt;h6&gt; is the lowest.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;h1&gt;</code></td>
+                            <td>Heading level 1</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;h2&gt;</code></td>
+                            <td>Heading level 2</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;h3&gt;</code></td>
+                            <td>Heading level 3</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;h4&gt;</code></td>
+                            <td>Heading level 4</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;h5&gt;</code></td>
+                            <td>Heading level 5</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;h6&gt;</code></td>
+                            <td>Heading level 6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article id="semantics">
+                <h2>HTML Semantics</h2>
+                <p>Many web sites contain HTML code like: <code>&lt;div id="nav">&lt;/div></code> <code>&lt;div class="header"&gt;&lt;/div&gt;</code> <code>&lt;div id="footer"&gt;&lt;/div&gt;</code> to indicate navigation, header, and footer.
+
+                In HTML there are some semantic elements that can be used to define different parts of a web page:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;article&gt;</code></td>
+                            <td>This HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;aside&gt;</code></td>
+                            <td>This HTML element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;figcaption&gt;</code></td>
+                            <td>This HTML element represents a caption or legend describing the rest of the contents of its parent <code>&lt;figure&gt;</code> element.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;figure&gt;</code></td>
+                            <td>This HTML element represents self-contained content, potentially with an optional caption, which is specified using the <code>&lt;figcaption&gt;</code> element. The figure, its caption, and its contents are referenced as a single unit.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;footer&gt;</code></td>
+                            <td>This HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. A <code>&lt;footer&gt;</code> typically contains information about the author of the section, copyright data or links to related documents.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;header&gt;</code></td>
+                            <td>This HTML element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;main&gt;</code></td>
+                            <td>This HTML element represents the dominant content of the <code>&lt;body&gt;</code> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;nav&gt;</code></td>
+                            <td>This HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;section&gt;</code></td>
+                            <td>This HTML element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article id="resources">
+                <h2>Bookmarks / Resources</h2>
+                <p>These are my bookmarks / resources I currently use on a daily basis as a developer. </p>
+                <ul>
+                    <li class="bookmark">
+                        <a href="https://developer.mozilla.org/en-US/" target="_blank">
+                            <h3>MDN Web Docs</h3>
+                            <p>Documenting web technologies, including CSS, HTML, and JavaScript, since 2005.</p>
+                        </a>
+                    </li>
+                    <li class="bookmark">
+                        <a href="https://validator.w3.org/" target="_blank">
+                            <h3>W3C Markup Validation Service</h3>
+                            <p>Check the markup (HTML, XHTML, …) of Web documents</p>
+                        </a>
+                    </li>
+                    <li class="bookmark">
+                        <a href="https://www.w3schools.com/" target="_blank">
+                            <h3>W3Schools</h3>
+                            <p>W3Schools Online Web Tutorials</p>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>By Youri van Deutekom</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- inspiration https://html-css-done-quick.netlify.app/ -->
